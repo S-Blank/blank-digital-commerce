@@ -2,10 +2,14 @@
 
 /*
 Plugin Name: Blank Digital Commerce
-Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
-Description: A brief description of the Plugin.
 Version: 1.0
-Author: simon
-Author URI: http://URI_Of_The_Plugin_Author
-License: A "Slug" license name e.g. GPL2
+Author: Blank Digital
+Author URI: https://blank-digital.com
 */
+
+/* Simple Meta Fields */
+require_once(__DIR__ . '/lib/rudr-simple-fields/rudr-simple-fields.php');
+update_option('simple_meta_fields_license', 'simon.blank@blank-digital.com');
+
+/* Product */
+require_once(__DIR__ . '/product/product.php');
